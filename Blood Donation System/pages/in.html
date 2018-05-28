@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Blood Donation</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!--// Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="../css/my_css.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Bootstrap-css -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!-- Style-css -->
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<!-- Font-Awesome-Icons-css -->
+	<link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Popup css (for Video Popup) -->
+	<link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="all">
+	<!-- Lightbox css (for Projects) -->
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+	<!-- Flexslider css (for Testimonials) -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Economica:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Rasa:300,400,500,600,700" rel="stylesheet">
+	<!-- //web-fonts -->
+
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#profile").click(function() {
+				$("#show").load("../includes/profile.php");
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class="main-agile">
+		<!-- banner -->
+		<div class="agile-top">
+			<div class="col-xs-4 logo">
+				<h1>
+					Blood Donation
+				</h1>
+			</div>
+			<div class="col-xs-6 header-w3l">
+				<ul>
+					<li>
+						<a href="../index.html">
+							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign out </a>
+					</li>
+					<li>
+						<a href="#" id="profile" data-toggle="modal" data-target="#myModal1">
+							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Profile </a>
+					</li>
+					<li id="app">
+						<a href="#" data-toggle="modal" data-target="#myModal2">
+							<span class="fa fa-pencil-square-o" aria-hidden="true"></span>Appointment</a>
+					</li>
+				</ul>
+			</div>
+			<!-- navigation -->
+			<div id="main-content" class="col-xs-2 menu">
+				<a href="" id="menuToggle">
+					<span class="navClosed"></span>
+				</a>
+				<nav id="navbar">
+					<a href="#home">Home</a>
+					<a href="#donor">Why Become Donor</a>
+					<a href="#give">Who Can Give Blood</a>
+					<a href="#process">Donation Process</a>
+					<a href="#gallery">Gallery</a>
+					<a href="#people">What People Says</a>
+					<a href="#contact">Contact Us</a>
+				</nav>
+			</div>
+			<!-- //navigation -->
+		</div>
+	</div>
+	<!-- signin Model -->
+	<!-- Modal1 -->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modal-body-sub_agile">
+					<div class="modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign"> Profile </h3>
+						<div id="show"></div>
+						<p class="about-me"></p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- //Modal content-->
+		</div>
+	</div>
+	<!-- //Modal1 -->
+	<!-- //signin Model -->
+	<!-- signup Model -->
+	<!-- Modal2 -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modal-body-sub_agile">
+					<div class="main-mailposi">
+						<span class="fa fa-envelope-o" aria-hidden="true"></span>
+					</div>
+					<div class="modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">Request Appointment</h3>
+						<form id="formRequest" action="/Blood Donation System/includes/request.php" method="POST">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" id="name" placeholder="Name" name="name" required="">
+							</div>
+							<div class="styled-input">
+								<input type="email" id="email" placeholder="E-mail" name="email" required="">
+							</div>
+							<div class="styled-input">
+								<input type="text" id="phone" placeholder="Phone" name="phone" required="">
+							</div>
+							<div class="styled-input">
+								<input type="date" id="date" placeholder="Date" name="date" required="">
+							</div>
+							<div class="styled-input">
+								<input type="time" id="time" placeholder="Time" name="time" required="">
+							</div>
+							<input type="submit" id="request" name="submit" value="Request">
+						</form>
+						<p class="form-message"></p>
+					</div>
+				</div>
+			</div>
+			<!-- //Modal content-->
+		</div>
+	</div>
+
+	<!-- //Modal2 -->
+	<!-- //signup Model -->
+
+	<div id="content"></div>
+
+	<!-- js-scripts -->
+	<script src="../js/my_jquery.js"></script>
+
+	<!-- jquery -->
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<!-- //jquery -->
+
+	<script src="../js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!--  light box js -->
+	<script src="../js/lightbox-plus-jquery.min.js"></script>
+	<!-- //light box js-->
+
+	<!-- stats numscroller-js-file -->
+	<script src="../js/numscroller-1.0.js"></script>
+	<!-- //stats numscroller-js-file -->
+
+	<!-- Baneer-js -->
+	<script src="../js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!-- //Baneer-js -->
+
+	<!-- navigation -->
+	<script>
+		(function ($) {
+			// Menu Functions
+			$(document).ready(function () {
+				$('#menuToggle').click(function (e) {
+					var $parent = $(this).parent('.menu');
+					$parent.toggleClass("open");
+					var navState = $parent.hasClass('open') ? "hide" : "show";
+					$(this).attr("title", navState + " navigation");
+					// Set the timeout to the animation length in the CSS.
+					setTimeout(function () {
+						console.log("timeout set");
+						$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+					}, 200);
+					e.preventDefault();
+				});
+			});
+		})(jQuery);
+	</script>
+	<!-- //navigation -->
+
+
+	<!-- flexSlider (for testimonials) -->
+	<script defer src="../js/jquery.flexslider.js"></script>
+	<script>
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!-- //flexSlider (for testimonials) -->
+	<script>
+	$(document).ready(function(){
+		$("#formRequest").submit(function(event) {
+			event.preventDefault();
+			var name = $("#name").val();
+			var email = $("#email").val();
+			var phone = $("#phone").val();
+			var date = $("#date").val();
+			var time = $("#time").val();
+
+			$.ajax({
+				url: "../includes/request.php",
+				type: "POST",
+				data:{
+					"name": name,
+					"email": email,
+					"phone": phone,
+					"date": date,
+					"time": time
+				},
+				cache: false,
+				success: function(data){
+						$("#name").val('');
+						$("#email").val('');
+						$("#phone").val('');
+						$("#date").val('');
+						$("#time").val('');
+						$(".form-message").html("An appointment is scheduled.");
+				}
+			})
+	});
+	});
+	</script>
+	<!-- //js-scripts -->
+
+</body>
+
+</html>

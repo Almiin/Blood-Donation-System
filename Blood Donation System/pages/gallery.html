@@ -1,0 +1,179 @@
+<!-- gallery -->
+
+<head>
+	<title>Gallery</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!--// Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="../css/my_css.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Bootstrap-css -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!-- Style-css -->
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<!-- Font-Awesome-Icons-css -->
+	<link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="all">
+	<!-- Lightbox css (for Projects) -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Economica:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Rasa:300,400,500,600,700" rel="stylesheet">
+	<!-- //web-fonts -->
+
+	<script>
+	$(document).ready(function(){
+		$("#tclose").click(function(){
+			img.close();
+		});
+
+	});
+	</script>
+
+</head>
+<div class="banner-bottom-w3l" id="gallery">
+	<div class="container">
+  <div class="title-div">
+    <h3 class="tittle">Gallery</h3>
+  </div>
+  <div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic13.jpg">
+            <img src="/Blood Donation System/images/pic13.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+		<div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic14.jpg">
+            <img src="/Blood Donation System/images/pic14.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+		<div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic15.jpg">
+            <img src="/Blood Donation System/images/pic15.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+		<div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic16.jpg">
+            <img src="/Blood Donation System/images/pic16.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+		<div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic17.jpg">
+            <img src="/Blood Donation System/images/pic17.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+		<div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic18.jpg">
+            <img src="/Blood Donation System/images/pic18.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+		<div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic19.jpg">
+            <img src="/Blood Donation System/images/pic19.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+		<div class="gallery-agile-kmsrow">
+      <div class="col-xs-3 gallery-agile-grids">
+        <div class="portfolio-hover">
+          <a href="/Blood Donation System/images/pic20.jpg">
+            <img src="/Blood Donation System/images/pic20.jpg" class="img-responsive zoom-img" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- js-scripts -->
+
+<!-- jquery -->
+<script src="../js/jquery-2.1.4.min.js"></script>
+<!-- //jquery -->
+
+<script src="../js/bootstrap.js"></script>
+<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+<!--  light box js -->
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+<!-- //light box js-->
+
+<!-- stats numscroller-js-file -->
+<script src="../js/numscroller-1.0.js"></script>
+<!-- //stats numscroller-js-file -->
+
+<!-- Baneer-js -->
+<script src="../js/responsiveslides.min.js"></script>
+<script>
+  // You can also use "$(window).load(function() {"
+  $(function () {
+    // Slideshow 4
+    $("#slider4").responsiveSlides({
+      auto: true,
+      pager: true,
+      nav: false,
+      speed: 500,
+      namespace: "callbacks",
+      before: function () {
+        $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+        $('.events').append("<li>after event fired.</li>");
+      }
+    });
+
+  });
+</script>
+<!-- //Baneer-js -->
+
+<!-- navigation -->
+<script>
+  (function ($) {
+    // Menu Functions
+    $(document).ready(function () {
+      $('#menuToggle').click(function (e) {
+        var $parent = $(this).parent('.menu');
+        $parent.toggleClass("open");
+        var navState = $parent.hasClass('open') ? "hide" : "show";
+        $(this).attr("title", navState + " navigation");
+        // Set the timeout to the animation length in the CSS.
+        setTimeout(function () {
+          console.log("timeout set");
+          $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+        }, 200);
+        e.preventDefault();
+      });
+    });
+  })(jQuery);
+</script>
+<!-- //navigation -->
+<!-- //gallery -->

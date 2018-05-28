@@ -1,0 +1,154 @@
+<!-- Donation process -->
+<head>
+	<title>Donation Process</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!--// Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="../css/my_css.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Bootstrap-css -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!-- Style-css -->
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<!-- Font-Awesome-Icons-css -->
+	<link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="all">
+	<!-- Lightbox css (for Projects) -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Economica:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Rasa:300,400,500,600,700" rel="stylesheet">
+	<!-- //web-fonts -->
+
+</head>
+<div class="team" id="process">
+  <div class="container">
+    <div class="title-div">
+      <h3 class="tittle">Donation Process</h3>
+      <div class="tittle-style">
+        <p id=proc"">Before donating blood, please eat regular meals, drink plenty of fluid (non-alcoholic) and avoid vigorous exercise or exertion.</p>
+      </div>
+    </div>
+    <div class="agileits-team-grids">
+      <div class="col-sm-3 col-xs-6 agileits-team-grid">
+        <div class="team-info">
+          <img src="/Blood Donation System/images/pic9.jpg" alt="">
+          <div class="team-caption">
+            <h4>Registration</h4>
+            <ul>
+              <li>
+                <p>You need to complete a very simple registration form. Which contains all required contact information.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6 agileits-team-grid">
+        <div class="team-info">
+          <img src="/Blood Donation System/images/pic10.jpg" alt="">
+          <div class="team-caption">
+            <h4>Screening</h4>
+            <ul>
+              <li>
+                <p>A drop of blood from your finger will take for a simple test to ensure that your blood iron levels are proper enough for the donation process.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6 agileits-team-grid">
+        <div class="team-info">
+          <img src="/Blood Donation System/images/pic11.jpg" alt="">
+          <div class="team-caption">
+            <h4>Donation</h4>
+            <ul>
+              <li>
+                <p>After ensuring and passed the screening test successfully you will be directed to a donor bed for donation.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6 agileits-team-grid">
+        <div class="team-info">
+          <img src="/Blood Donation System/images/pic12.jpg" alt="">
+          <div class="team-caption">
+            <h4>Refreshment</h4>
+            <ul>
+              <li>
+                <p>You can also stay in sitting room until you feel strong enough to leave. You will receive an awesome drink from us.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<!-- js-scripts -->
+
+<!-- jquery -->
+<script src="../js/jquery-2.1.4.min.js"></script>
+<!-- //jquery -->
+
+<script src="../js/bootstrap.js"></script>
+<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+<!--  light box js -->
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+<!-- //light box js-->
+
+<!-- stats numscroller-js-file -->
+<script src="../js/numscroller-1.0.js"></script>
+<!-- //stats numscroller-js-file -->
+
+<!-- Baneer-js -->
+<script src="../js/responsiveslides.min.js"></script>
+<script>
+  // You can also use "$(window).load(function() {"
+  $(function () {
+    // Slideshow 4
+    $("#slider4").responsiveSlides({
+      auto: true,
+      pager: true,
+      nav: false,
+      speed: 500,
+      namespace: "callbacks",
+      before: function () {
+        $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+        $('.events').append("<li>after event fired.</li>");
+      }
+    });
+
+  });
+</script>
+<!-- //Baneer-js -->
+
+<!-- navigation -->
+<script>
+  (function ($) {
+    // Menu Functions
+    $(document).ready(function () {
+      $('#menuToggle').click(function (e) {
+        var $parent = $(this).parent('.menu');
+        $parent.toggleClass("open");
+        var navState = $parent.hasClass('open') ? "hide" : "show";
+        $(this).attr("title", navState + " navigation");
+        // Set the timeout to the animation length in the CSS.
+        setTimeout(function () {
+          console.log("timeout set");
+          $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+        }, 200);
+        e.preventDefault();
+      });
+    });
+  })(jQuery);
+</script>
+<!-- //navigation -->
+<!-- //Donation process -->

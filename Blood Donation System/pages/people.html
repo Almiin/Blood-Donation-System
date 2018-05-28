@@ -1,0 +1,149 @@
+<!-- What people says -->
+<head>
+	<title>What People Says</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!--// Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="../css/my_css.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Bootstrap-css -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!-- Style-css -->
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<!-- Font-Awesome-Icons-css -->
+
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+	<!-- Flexslider css (for Testimonials) -->
+	<!-- //css files -->
+
+</head>
+<div class="testimonials" id="people">
+  <div class="container">
+    <div class="title-div">
+      <h3 class="tittle">
+        What People Says
+      </h3>
+      <div class="tittle-style">
+      </div>
+    </div>
+    <div class="col-md-6 testimonials-main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <div class="inner-testimonials-w3ls">
+                <img src="/Blood Donation System/images/pic22.jpg" alt=" " class="img-responsive" />
+                <div class="testimonial-info-wthree">
+                  <h5>Penny Smith</h5>
+                  <p class="para-w3-agileits">“Giving blood is simple for the donor but it’s life‐changing for the patient who receives it. 7,000 donations are needed every day to make sure there’s enough blood for those who need it."</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="inner-testimonials-w3ls">
+                <img src="/Blood Donation System/images/pic23.jpg" alt=" " class="img-responsive" />
+                <div class="testimonial-info-wthree">
+                  <h5>Sophie Ellis-Bextor</h5>
+                  <p class="para-w3-agileits">"Why don’t you join me and make it your New Year’s Resolution to give blood regularly? It’s free, you’ll save lives, and it’s a resolution you’ll actually want to keep!”</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="inner-testimonials-w3ls">
+                <img src="/Blood Donation System/images/pic24.jpg" alt=" " class="img-responsive" />
+                <div class="testimonial-info-wthree">
+                  <h5>James Harrison</h5>
+                  <p class="para-w3-agileits">"Some people say, 'Oh, you're a hero,' " he says. "But I'm in a safe room, donating blood. They give me a cup of coffee and something to nibble on. And then I just go on my way. ... No problem, no hardship."</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="inner-testimonials-w3ls">
+                <img src="/Blood Donation System/images/pic25.jpg" alt=" " class="img-responsive" />
+                <div class="testimonial-info-wthree">
+                  <h5>Jorgie Porter</h5>
+                  <p class="para-w3-agileits">"If someone you loved needed blood you'd want it to be there, so if you can donate then please do."</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- js-scripts -->
+
+<!-- jquery -->
+<script src="../js/jquery-2.1.4.min.js"></script>
+<!-- //jquery -->
+
+<script src="../js/bootstrap.js"></script>
+<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+<!-- Baneer-js -->
+<script src="../js/responsiveslides.min.js"></script>
+<script>
+  // You can also use "$(window).load(function() {"
+  $(function () {
+    // Slideshow 4
+    $("#slider4").responsiveSlides({
+      auto: true,
+      pager: true,
+      nav: false,
+      speed: 500,
+      namespace: "callbacks",
+      before: function () {
+        $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+        $('.events').append("<li>after event fired.</li>");
+      }
+    });
+
+  });
+</script>
+<!-- //Baneer-js -->
+
+<!-- navigation -->
+<script>
+  (function ($) {
+    // Menu Functions
+    $(document).ready(function () {
+      $('#menuToggle').click(function (e) {
+        var $parent = $(this).parent('.menu');
+        $parent.toggleClass("open");
+        var navState = $parent.hasClass('open') ? "hide" : "show";
+        $(this).attr("title", navState + " navigation");
+        // Set the timeout to the animation length in the CSS.
+        setTimeout(function () {
+          console.log("timeout set");
+          $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+        }, 200);
+        e.preventDefault();
+      });
+    });
+  })(jQuery);
+</script>
+<!-- //navigation -->
+
+<!-- flexSlider (for testimonials) -->
+<script defer src="../js/jquery.flexslider.js"></script>
+<script>
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function (slider) {
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
+<!-- //flexSlider (for testimonials) -->
+
+<!-- //js-scripts -->
+<!-- //What People Says -->

@@ -1,0 +1,130 @@
+<!-- why become donor -->
+
+<head>
+	<title>Why Become Donor</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!--// Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="../css/my_css.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Bootstrap-css -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!-- Style-css -->
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<!-- Font-Awesome-Icons-css -->
+	<link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="all">
+	<!-- Lightbox css (for Projects) -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Economica:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Rasa:300,400,500,600,700" rel="stylesheet">
+	<!-- //web-fonts -->
+
+</head>
+<div class="banner-bottom-w3l" id="donor">
+  <div class="container">
+    <div class="title-div">
+      <h3 class="tittle">
+        Why Become Donor?
+      </h3>
+      <div class="tittle-style">
+      </div>
+      <p>If you’re a blood donor, you’re a hero to someone, somewhere, who received your gracious gift of life.</p>
+    </div
+    <div class="welcome-sub-wthree">
+      <div class="col-md-5 banner_bottom_left">
+        <p id="haha">The holidays are over and all the gifts have been exchanged — or have they? There's one gift remaining that is possibly the most important one you can give: <span>blood</span>.</p>
+        <p>Blood is our life force—literally. It contains many life-saving components that can help treat different illnesses and injuries. For some people with serious conditions, blood donors can play an essential part in their ongoing care. Blood donation often carries with it the feeling that you've helped someone in need and made a difference in his or her life in a most essential way.</p>
+        <h6 class="w3l-style">Donate Blood</h6>
+      </div>
+      <!-- Stats-->
+      <div class="col-md-7 stats-info-agile">
+        <div class="w3l-right-stats">
+          <div class="stats-grid stat-border">
+            <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='112500000' data-delay='.5' data-increment="300000">112500000</div>
+            <p>Total Donors</p>
+          </div>
+          <div class="stats-grid">
+            <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='57' data-delay='.5' data-increment="1">57</div>
+            <p>Countries</p>
+          </div>
+          <div class="stats-grid stat-border border-st2">
+            <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='8' data-delay='.5' data-increment="1">8</div>
+            <p>Blood Groups</p>
+          </div>
+        </div>
+      </div>
+      <!-- //Stats -->
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<!-- js-scripts -->
+
+<!-- jquery -->
+<script src="../js/jquery-2.1.4.min.js"></script>
+<!-- //jquery -->
+
+<script src="../js/bootstrap.js"></script>
+<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+<!--  light box js -->
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+<!-- //light box js-->
+
+<!-- stats numscroller-js-file -->
+<script src="../js/numscroller-1.0.js"></script>
+<!-- //stats numscroller-js-file -->
+
+<!-- Baneer-js -->
+<script src="../js/responsiveslides.min.js"></script>
+<script>
+  // You can also use "$(window).load(function() {"
+  $(function () {
+    // Slideshow 4
+    $("#slider4").responsiveSlides({
+      auto: true,
+      pager: true,
+      nav: false,
+      speed: 500,
+      namespace: "callbacks",
+      before: function () {
+        $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+        $('.events').append("<li>after event fired.</li>");
+      }
+    });
+
+  });
+</script>
+<!-- //Baneer-js -->
+
+<!-- navigation -->
+<script>
+  (function ($) {
+    // Menu Functions
+    $(document).ready(function () {
+      $('#menuToggle').click(function (e) {
+        var $parent = $(this).parent('.menu');
+        $parent.toggleClass("open");
+        var navState = $parent.hasClass('open') ? "hide" : "show";
+        $(this).attr("title", navState + " navigation");
+        // Set the timeout to the animation length in the CSS.
+        setTimeout(function () {
+          console.log("timeout set");
+          $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+        }, 200);
+        e.preventDefault();
+      });
+    });
+  })(jQuery);
+</script>
+<!-- //navigation -->
+
+
+<!-- //why become donor -->

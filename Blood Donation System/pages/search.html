@@ -1,0 +1,245 @@
+<!-- search -->
+<head>
+		<title>Search Donors</title>
+		<!-- Meta tag Keywords -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<!--// Meta tag Keywords -->
+		<!-- css files -->
+		<link rel="stylesheet" href="../css/my_css.css">
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<!-- Bootstrap-css -->
+		<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+		<!-- Style-css -->
+		<link rel="stylesheet" href="../css/font-awesome.css">
+		<!-- Font-Awesome-Icons-css -->
+		<link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+		<!-- Popup css (for Video Popup) -->
+		<link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="all">
+		<!-- Lightbox css (for Projects) -->
+		<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" property="" />
+		<!-- Flexslider css (for Testimonials) -->
+		<!-- //css files -->
+		<!-- web-fonts -->
+		<link href="//fonts.googleapis.com/css?family=Economica:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Rasa:300,400,500,600,700" rel="stylesheet">
+		<!-- //web-fonts -->
+
+		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.3/css/rowReorder.dataTables.min.css">
+    <link type="text/css" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.dataTables.min.css">
+
+
+  </head>
+
+  <div class="contact" id="search">
+    <div class="title-div">
+      <h3 class="tittle">Search Donors</h3>
+      <div class="tittle-style">
+      </div>
+    </div>
+  <table id="example" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th>Seq.</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>Rhona Davidson</td>
+                <td>Integration Specialist</td>
+                <td>Tokyo</td>
+                <td>2010/10/14</td>
+                <td>$327,900</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Colleen Hurst</td>
+                <td>Javascript Developer</td>
+                <td>San Francisco</td>
+                <td>2009/09/15</td>
+                <td>$205,500</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Sonya Frost</td>
+                <td>Software Engineer</td>
+                <td>Edinburgh</td>
+                <td>2008/12/13</td>
+                <td>$103,600</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Jena Gaines</td>
+                <td>Office Manager</td>
+                <td>London</td>
+                <td>2008/12/19</td>
+                <td>$90,560</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Quinn Flynn</td>
+                <td>Support Lead</td>
+                <td>Edinburgh</td>
+                <td>2013/03/03</td>
+                <td>$342,000</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Charde Marshall</td>
+                <td>Regional Director</td>
+                <td>San Francisco</td>
+                <td>2008/10/16</td>
+                <td>$470,600</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Haley Kennedy</td>
+                <td>Senior Marketing Designer</td>
+                <td>London</td>
+                <td>2012/12/18</td>
+                <td>$313,500</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>Tatyana Fitzpatrick</td>
+                <td>Regional Director</td>
+                <td>London</td>
+                <td>2010/03/17</td>
+                <td>$385,750</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Michael Silva</td>
+                <td>Marketing Designer</td>
+                <td>London</td>
+                <td>2012/11/27</td>
+                <td>$198,500</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Paul Byrd</td>
+                <td>Chief Financial Officer (CFO)</td>
+                <td>New York</td>
+                <td>2010/06/09</td>
+                <td>$725,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Seq.</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
+    } );
+} );
+</script>
+
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/rowreorder/1.2.3/js/dataTables.rowReorder.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+
+  <!-- js-scripts -->
+  <script src="../js/my_jquery.js"></script>
+
+  <!-- jquery -->
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <!-- //jquery -->
+
+  <script src="../js/bootstrap.js"></script>
+  <!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+  <!--  light box js -->
+  <script src="../js/lightbox-plus-jquery.min.js"></script>
+  <!-- //light box js-->
+
+  <!-- stats numscroller-js-file -->
+  <script src="../js/numscroller-1.0.js"></script>
+  <!-- //stats numscroller-js-file -->
+
+  <!-- navigation -->
+  <script>
+  	(function ($) {
+  		// Menu Functions
+  		$(document).ready(function () {
+  			$('#menuToggle').click(function (e) {
+  				var $parent = $(this).parent('.menu');
+  				$parent.toggleClass("open");
+  				var navState = $parent.hasClass('open') ? "hide" : "show";
+  				$(this).attr("title", navState + " navigation");
+  				// Set the timeout to the animation length in the CSS.
+  				setTimeout(function () {
+  					console.log("timeout set");
+  					$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+  				}, 200);
+  				e.preventDefault();
+  			});
+  		});
+  	})(jQuery);
+  </script>
+  <!-- //navigation -->
+
+  <!-- //pop-up-box (syllabus section video)-->
+
+
+  <!-- password-script -->
+  <script>
+  	window.onload = function () {
+  		document.getElementById("password1").onchange = validatePassword;
+  		document.getElementById("password2").onchange = validatePassword;
+  	}
+
+  	function validatePassword() {
+  		var pass2 = document.getElementById("password2").value;
+  		var pass1 = document.getElementById("password1").value;
+  		if (pass1 != pass2)
+  			document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+  		else
+  			document.getElementById("password2").setCustomValidity('');
+  		//empty string means no validation error
+  	}
+  </script>
+  <!-- //password-script -->
+
+
+  <!-- //search -->

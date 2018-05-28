@@ -1,0 +1,123 @@
+#slider4 h4 {
+  font-size: 30px;
+  color:white;
+  text-shadow: 0px 0px 5px black;
+}
+#tabela{
+  border: 1px solid darkred;
+}
+#slider4 h3 span {
+  color:white;
+  text-shadow: 0px 0px 3px darkred;
+}
+#logo1 h2{
+  color:white;
+}
+#haha span {
+  color:darkred;
+}
+#vid p{
+  color:darkred;
+}
+.process-info {
+    padding: 32px 16px;
+    text-align: left;
+    background-color: darkred;
+}
+article{
+  display: block;
+}
+.process-layout{
+  top:0px;
+  box-sizing: border-box;
+}
+.process-layout h2 {
+    font-size: 28px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    line-height: 36px;
+    margin: 0 0 16px 0;
+}
+article p {
+    font: 18px/28px 'Source Sans Pro', sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin: 0 0 12px;
+    padding: 0;
+}
+.process-layout .process-img .step h3 {
+    color: #FFFFFF;
+    bottom: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    z-index: 9999;
+}
+.banner-bottom-w3l ul{
+  color:darkred;
+  padding-top: 10px;
+  font-size: 15px;
+}
+#gender #bgroup{
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #777;
+	padding: 5px 0;
+	padding-left: 5px;
+	border-top: none;
+	border: 0;
+	width: 100%;
+	border-bottom: 1px solid #dcdcdc;
+	background: none;
+	-webkit-appearance: none;
+	outline: none;
+	margin-bottom: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+#user{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+#user td, #user th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 2%;
+}
+#user tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+#user tr:hover {
+  background-color: #ddd;
+}
+
+#user th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: darkred;
+    color: white;
+}
